@@ -1,0 +1,8 @@
+{
+  "name": "Chicken Strip Basket",
+  "category": "Entrees",
+  "price": "$14",
+  "description": "Four hand-breaded strips, house-cut fries, choice of dipping sauce.",
+  "undercookedRisk": false,
+  "order": 80
+}

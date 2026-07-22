@@ -1,0 +1,8 @@
+{
+  "name": "Windy Peaks Nachos",
+  "category": "Appetizers",
+  "price": "$14",
+  "description": "House-fried pork rinds topped with smoked BBQ brisket or BBQ pork and our signature beer cheese sauce. Sub house-cut fries for $2.",
+  "undercookedRisk": false,
+  "order": 20
+}

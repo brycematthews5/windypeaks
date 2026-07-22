@@ -1,0 +1,8 @@
+{
+  "name": "Fettuccini Alfredo",
+  "category": "Entrees",
+  "price": "$17",
+  "description": "House-made creamy garlic alfredo. Add chicken, steak, or shrimp for $8.",
+  "undercookedRisk": false,
+  "order": 60
+}

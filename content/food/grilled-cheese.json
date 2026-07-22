@@ -1,0 +1,8 @@
+{
+  "name": "Grilled Cheese",
+  "category": "Kids",
+  "price": "$4",
+  "description": "",
+  "undercookedRisk": false,
+  "order": 50
+}

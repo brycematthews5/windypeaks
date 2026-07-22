@@ -1,0 +1,8 @@
+{
+  "name": "Chicken Breast",
+  "category": "Kids",
+  "price": "$8",
+  "description": "",
+  "undercookedRisk": true,
+  "order": 20
+}

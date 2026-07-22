@@ -1,0 +1,8 @@
+{
+  "name": "Spicy Fried Cauliflower",
+  "category": "Appetizers",
+  "price": "$9",
+  "description": "Aleppo pepper and buffalo-style beer batter, house-made ranch.",
+  "undercookedRisk": false,
+  "order": 100
+}

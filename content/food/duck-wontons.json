@@ -1,0 +1,8 @@
+{
+  "name": "Duck Wontons",
+  "category": "Appetizers",
+  "price": "$12",
+  "description": "Duck, bacon, sweet corn, and cream cheese, packed into a crisp wonton shell.",
+  "undercookedRisk": false,
+  "order": 40
+}

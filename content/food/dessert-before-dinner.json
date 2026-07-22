@@ -1,0 +1,8 @@
+{
+  "name": "Dessert Before Dinner",
+  "category": "Appetizers",
+  "price": "$9",
+  "description": "Sweet potato fries, house-made caramel, toasted marshmallow.",
+  "undercookedRisk": false,
+  "order": 110
+}

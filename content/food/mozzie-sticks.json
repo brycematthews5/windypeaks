@@ -1,0 +1,8 @@
+{
+  "name": "Mozzie Sticks",
+  "category": "Appetizers",
+  "price": "$10",
+  "description": "Beer-battered mozzarella, house-made ranch.",
+  "undercookedRisk": false,
+  "order": 90
+}

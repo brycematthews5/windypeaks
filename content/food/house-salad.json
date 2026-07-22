@@ -1,0 +1,8 @@
+{
+  "name": "House Salad",
+  "category": "Salads",
+  "price": "$8",
+  "description": "Crisp greens, tomato, cucumber, carrot, choice of dressing.",
+  "undercookedRisk": false,
+  "order": 30
+}

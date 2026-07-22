@@ -1,0 +1,8 @@
+{
+  "name": "Coconut Shrimp",
+  "category": "Appetizers",
+  "price": "$14",
+  "description": "Butterflied tiger shrimp in a coconut-panko crust, served with house-made bang-bang sauce.",
+  "undercookedRisk": false,
+  "order": 30
+}

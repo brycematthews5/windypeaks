@@ -5,8 +5,6 @@
    in the repo. */
 
 const WPBeers = (function () {
-  const REPO = "brycematthews5/windypeaks";
-  const BRANCH = "main";
   const DIR = "content/beers";
 
   const CATEGORY_ORDER = [
@@ -18,32 +16,11 @@ const WPBeers = (function () {
     "Sour & Fruit Beers",
   ];
 
-  function escapeHtml(str) {
-    return String(str).replace(/[&<>"']/g, (c) => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
-    })[c]);
-  }
+  const escapeHtml = WPContent.escapeHtml;
 
   async function fetchAll() {
-    const listUrl = `https://api.github.com/repos/${REPO}/contents/${DIR}?ref=${BRANCH}`;
-    const listRes = await fetch(listUrl, { headers: { Accept: "application/vnd.github.v3+json" } });
-    if (!listRes.ok) throw new Error(`Directory listing failed: ${listRes.status}`);
-    const files = await listRes.json();
-    const jsonFiles = files.filter((f) => f.type === "file" && f.name.endsWith(".json"));
-
-    const beers = await Promise.all(
-      jsonFiles.map(async (f) => {
-        const res = await fetch(f.download_url);
-        if (!res.ok) return null;
-        try {
-          return await res.json();
-        } catch {
-          return null;
-        }
-      })
-    );
-
-    return beers.filter((b) => b && b.onTap !== false);
+    const beers = await WPContent.fetchFolder(DIR);
+    return beers.filter((b) => b.onTap !== false);
   }
 
   function renderBeerCard(beer) {

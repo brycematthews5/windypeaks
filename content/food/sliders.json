@@ -1,0 +1,8 @@
+{
+  "name": "Sliders",
+  "category": "Sandwiches",
+  "price": "$12",
+  "description": "Two mini burgers on soft buns.",
+  "undercookedRisk": true,
+  "order": 80
+}

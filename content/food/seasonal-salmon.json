@@ -1,0 +1,8 @@
+{
+  "name": "Seasonal Salmon",
+  "category": "Entrees",
+  "price": "$28",
+  "description": "6oz, ask your server about today's preparation.",
+  "undercookedRisk": true,
+  "order": 40
+}

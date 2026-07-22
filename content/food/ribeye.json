@@ -1,0 +1,8 @@
+{
+  "name": "Ribeye",
+  "category": "Entrees",
+  "price": "$35",
+  "description": "14oz, well-marbled and seasoned, garlic herb compound butter, seasonal veggies, choice of baked potato, mashed potatoes, or fries.",
+  "undercookedRisk": true,
+  "order": 30
+}

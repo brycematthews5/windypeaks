@@ -1,0 +1,8 @@
+{
+  "name": "Chive and Dive Po'Boy",
+  "category": "Sandwiches",
+  "price": "$16",
+  "description": "Potato-chive-and-cheddar-crusted cod, garlic aioli, tomato, lettuce, pickles, French bread.",
+  "undercookedRisk": false,
+  "order": 60
+}

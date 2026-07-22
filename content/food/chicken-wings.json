@@ -1,0 +1,8 @@
+{
+  "name": "Chicken Wings",
+  "category": "Appetizers",
+  "price": "$14",
+  "description": "Half-pound, hand-tossed in Buffalo, BBQ, Carolina Mustard, Mango Habanero, or our sweet dry rub. Full pound $26.",
+  "undercookedRisk": false,
+  "order": 10
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Chicken Sandwich",
+  "category": "Sandwiches",
+  "price": "$15",
+  "description": "6oz grilled chicken breast, choice of cheese.",
+  "undercookedRisk": true,
+  "order": 50
+}

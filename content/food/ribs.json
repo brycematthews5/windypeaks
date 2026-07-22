@@ -1,0 +1,8 @@
+{
+  "name": "Ribs",
+  "category": "Entrees",
+  "price": "$18 / $34",
+  "description": "Smoked St. Louis-style baby back, choice of Memphis Sweet, Carolina Mustard, BBQ, or dry rub. Half rack $18, full rack $34.",
+  "undercookedRisk": false,
+  "order": 50
+}

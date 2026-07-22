@@ -1,0 +1,8 @@
+{
+  "name": "B.L.T. Sandwich",
+  "category": "Sandwiches",
+  "price": "$14",
+  "description": "Bacon, lettuce, tomato, mayo, toasted sourdough.",
+  "undercookedRisk": false,
+  "order": 70
+}

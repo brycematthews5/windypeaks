@@ -1,0 +1,8 @@
+{
+  "name": "Bourbon Bacon Jam Burger",
+  "category": "Sandwiches",
+  "price": "$17",
+  "description": "House beer cheese and bourbon bacon jam.",
+  "undercookedRisk": false,
+  "order": 20
+}

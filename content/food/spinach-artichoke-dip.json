@@ -1,0 +1,8 @@
+{
+  "name": "Spinach Artichoke Dip",
+  "category": "Appetizers",
+  "price": "$11",
+  "description": "Creamy spinach, cheese, and artichoke, served with house-made tortilla chips.",
+  "undercookedRisk": false,
+  "order": 50
+}

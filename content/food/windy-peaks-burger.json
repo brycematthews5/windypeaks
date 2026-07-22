@@ -1,0 +1,8 @@
+{
+  "name": "Windy Peaks Burger",
+  "category": "Sandwiches",
+  "price": "$15",
+  "description": "Half-pound patty, choice of cheddar, American, swiss, or house beer cheese sauce.",
+  "undercookedRisk": true,
+  "order": 10
+}

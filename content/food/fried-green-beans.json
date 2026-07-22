@@ -1,0 +1,8 @@
+{
+  "name": "Fried Green Beans",
+  "category": "Appetizers",
+  "price": "$12",
+  "description": "Crunchy, savory-breaded green beans with house-made ranch.",
+  "undercookedRisk": false,
+  "order": 70
+}

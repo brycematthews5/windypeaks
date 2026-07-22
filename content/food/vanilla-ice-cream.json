@@ -1,0 +1,8 @@
+{
+  "name": "Vanilla Ice Cream",
+  "category": "Desserts",
+  "price": "$5",
+  "description": "",
+  "undercookedRisk": false,
+  "order": 30
+}

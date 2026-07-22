@@ -1,0 +1,8 @@
+{
+  "name": "Seasonal Salad",
+  "category": "Salads",
+  "price": "$11",
+  "description": "Ask your server about this season's salad.",
+  "undercookedRisk": false,
+  "order": 20
+}

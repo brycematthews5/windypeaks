@@ -1,0 +1,8 @@
+{
+  "name": "Cheese Cake",
+  "category": "Desserts",
+  "price": "$12",
+  "description": "",
+  "undercookedRisk": false,
+  "order": 10
+}

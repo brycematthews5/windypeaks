@@ -1,0 +1,8 @@
+{
+  "name": "New York Strip",
+  "category": "Entrees",
+  "price": "$29",
+  "description": "12oz, lean and flavorful, garlic herb compound butter, seasonal veggies, choice of baked potato, mashed potatoes, or fries.",
+  "undercookedRisk": true,
+  "order": 20
+}

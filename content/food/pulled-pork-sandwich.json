@@ -1,0 +1,8 @@
+{
+  "name": "Pulled Pork Sandwich",
+  "category": "Sandwiches",
+  "price": "$15",
+  "description": "Smoked pulled pork, Memphis Sweet BBQ sauce, toasted bun.",
+  "undercookedRisk": false,
+  "order": 40
+}

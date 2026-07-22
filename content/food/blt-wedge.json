@@ -1,0 +1,8 @@
+{
+  "name": "BLT Wedge",
+  "category": "Salads",
+  "price": "$9",
+  "description": "Iceberg, crispy bacon, tomato, blue cheese crumbles, choice of dressing.",
+  "undercookedRisk": false,
+  "order": 10
+}

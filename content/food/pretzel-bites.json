@@ -1,0 +1,8 @@
+{
+  "name": "Pretzel Bites",
+  "category": "Appetizers",
+  "price": "$11",
+  "description": "Warm and salted, served with house-made beer cheese sauce.",
+  "undercookedRisk": false,
+  "order": 60
+}

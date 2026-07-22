@@ -1,0 +1,8 @@
+{
+  "name": "Fried Pickles",
+  "category": "Appetizers",
+  "price": "$12",
+  "description": "Beer-battered dill pickles, house-made ranch.",
+  "undercookedRisk": false,
+  "order": 80
+}

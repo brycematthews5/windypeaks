@@ -1,0 +1,8 @@
+{
+  "name": "Filet",
+  "category": "Entrees",
+  "price": "$35",
+  "description": "8oz Certified Angus tenderloin, garlic compound butter, seasonal veggies, choice of baked potato, mashed potatoes, or fries.",
+  "undercookedRisk": true,
+  "order": 10
+}
