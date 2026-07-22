@@ -72,7 +72,7 @@
             <a href="menu.html#food" class="btn btn--ghost btn--sm">See Steakhouse Menu</a>
           </article>
           <article class="card" data-reveal>
-            <div class="art-panel" style="aspect-ratio: 16/10; margin-bottom: var(--sp-4);" data-feature="beer"></div>
+            <img src="assets/img/wpglass.jpg" alt="Windy Peaks beer poured tableside in a branded glass" class="art-panel" style="aspect-ratio: 16/10; margin-bottom: var(--sp-4);">
             <h3 class="h-3">The Brewery</h3>
             <p class="text-dim" style="margin: var(--sp-2) 0 var(--sp-4);">Brewed on-site, alongside a rotating lineup of guest craft beer from Wyoming and beyond. Ask your server what's currently pouring.</p>
             <a href="menu.html#beer" class="btn btn--ghost btn--sm">See Beers on Tap</a>
@@ -138,7 +138,6 @@
   <script>
     document.querySelector(".hero__art").innerHTML = WPArt.mountains();
     document.querySelector('[data-feature="steak"]').innerHTML = WPArt.steak();
-    document.querySelector('[data-feature="beer"]').innerHTML = WPArt.beerPour();
     document.querySelector('[data-feature="mountains"]').innerHTML = WPArt.mountains();
   </script>
   <script src="assets/js/main.js"></script>
