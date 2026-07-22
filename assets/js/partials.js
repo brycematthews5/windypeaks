@@ -8,8 +8,8 @@
     { href: "menu.html", label: "Menu" },
     { href: "gallery.html", label: "Gallery" },
     { href: "gift-cards.html", label: "Gift Cards" },
-    { href: "employment.html", label: "Employment" },
     { href: "contact.html", label: "Contact" },
+    { href: "employment.html", label: "Employment" },
   ];
 
   const RESERVE_HREF = "reservations.html";
