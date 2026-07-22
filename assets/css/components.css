@@ -116,7 +116,10 @@
 /* ---- Forms ---- */
 .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: var(--sp-4); }
 .field label { font-size: var(--fs-sm); font-weight: 600; }
+.field label .req { color: var(--copper-dark); margin-left: 2px; }
+.section--dark .field label .req { color: var(--copper-light); }
 .field input, .field select, .field textarea {
+  width: 100%;
   padding: 0.85rem 1rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-on-light);
