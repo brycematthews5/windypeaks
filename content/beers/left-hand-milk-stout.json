@@ -1,0 +1,11 @@
+{
+  "name": "Left Hand Milk Stout",
+  "brewery": "Left Hand Brewing Co.",
+  "location": "Longmont, CO",
+  "category": "Porters & Stouts",
+  "abv": 6.0,
+  "nitro": true,
+  "description": "Brown sugar and vanilla aromas with hints of roasted coffee.",
+  "onTap": true,
+  "order": 10
+}

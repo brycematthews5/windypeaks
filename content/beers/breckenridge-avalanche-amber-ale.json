@@ -1,0 +1,11 @@
+{
+  "name": "Breckenridge Avalanche Amber Ale",
+  "brewery": "Breckenridge Brewery",
+  "location": "Littleton, CO",
+  "category": "Amber, Red & Brown Ales",
+  "abv": 4.4,
+  "nitro": false,
+  "description": "Pale grain aromas, semi-sweet middle, clean finish — a longtime best-seller.",
+  "onTap": true,
+  "order": 30
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Gruner Brothers Fluffy Cow",
+  "brewery": "Gruner Brothers Brewing",
+  "location": "Casper, WY",
+  "category": "IPAs",
+  "abv": 6.7,
+  "nitro": false,
+  "description": "Hazy IPA packed with Lotus and El Dorado hops.",
+  "onTap": true,
+  "order": 10
+}

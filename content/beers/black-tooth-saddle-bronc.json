@@ -1,0 +1,11 @@
+{
+  "name": "Black Tooth Saddle Bronc",
+  "brewery": "Black Tooth Brewing Co.",
+  "location": "Sheridan, WY",
+  "category": "Amber, Red & Brown Ales",
+  "abv": 4.8,
+  "nitro": false,
+  "description": "English-style brown ale — caramel, toffee, cocoa, clean finish.",
+  "onTap": true,
+  "order": 20
+}

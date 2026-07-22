@@ -1,0 +1,11 @@
+{
+  "name": "Wiley Roots Thirsty Robot",
+  "brewery": "Wiley Roots Brewing Co.",
+  "location": "Greeley, CO",
+  "category": "IPAs",
+  "abv": 7.4,
+  "nitro": false,
+  "description": "West Coast-style IPA with Amarillo, Mosaic, and El Dorado hops.",
+  "onTap": true,
+  "order": 20
+}

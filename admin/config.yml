@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://windypeaks.netlify.app
+display_url: https://windypeaks.netlify.app
+
+media_folder: "assets/img/beers"
+public_folder: "/assets/img/beers"
+
+collections:
+  - name: "beers"
+    label: "Beers on Tap"
+    label_singular: "Beer"
+    folder: "content/beers"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    format: "json"
+    extension: "json"
+    summary: "{{name}} — {{category}}"
+    fields:
+      - { label: "Beer Name", name: "name", widget: "string" }
+      - { label: "Brewery", name: "brewery", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", hint: "e.g. Sheridan, WY" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Pilsners & Pale Lagers"
+          - "Blonde & Pale Ales"
+          - "IPAs"
+          - "Amber, Red & Brown Ales"
+          - "Porters & Stouts"
+          - "Sour & Fruit Beers"
+      - { label: "ABV (%)", name: "abv", widget: "number", value_type: "float", min: 0, max: 20 }
+      - { label: "Served on Nitro", name: "nitro", widget: "boolean", default: false, required: false }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Currently On Tap", name: "onTap", widget: "boolean", default: true, hint: "Turn off when this beer kicks — keeps it saved for next time instead of deleting it." }
+      - { label: "Sort Order", name: "order", widget: "number", default: 10, hint: "Lower numbers show first within the same category." }

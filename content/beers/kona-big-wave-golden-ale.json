@@ -1,0 +1,11 @@
+{
+  "name": "Kona Big Wave Golden Ale",
+  "brewery": "Kona Brewing Co.",
+  "location": "Kailua-Kona, HI",
+  "category": "Blonde & Pale Ales",
+  "abv": 4.4,
+  "nitro": false,
+  "description": "Light golden ale, subtle fruitiness, delicate hop aroma.",
+  "onTap": true,
+  "order": 10
+}

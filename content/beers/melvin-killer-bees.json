@@ -1,0 +1,11 @@
+{
+  "name": "Melvin Killer Bees",
+  "brewery": "Melvin Brewing",
+  "location": "Jackson, WY",
+  "category": "Blonde & Pale Ales",
+  "abv": 5.0,
+  "nitro": false,
+  "description": "Clean and buttery-smooth, easy drinking with a honey note.",
+  "onTap": true,
+  "order": 20
+}
