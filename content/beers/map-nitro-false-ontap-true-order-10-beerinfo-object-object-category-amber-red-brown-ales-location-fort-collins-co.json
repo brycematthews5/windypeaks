@@ -1,0 +1,16 @@
+{
+  "nitro": false,
+  "onTap": true,
+  "order": 10,
+  "beerInfo": {
+    "name": "Fat Tire",
+    "brewery": "New Belgium Brewing",
+    "style": "American-Style Amber/Red Ale",
+    "abv": 5.2,
+    "ibu": 18,
+    "description": "",
+    "catalogBeerId": "98d5273e-96b7-47a3-a5ed-e1518c74700e"
+  },
+  "category": "Amber, Red & Brown Ales",
+  "location": "Fort Collins, CO"
+}
