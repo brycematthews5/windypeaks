@@ -62,6 +62,7 @@
 }
 .gallery-grid figure:nth-child(3n+1) { aspect-ratio: 4/5; }
 .gallery-grid figure:nth-child(5n) { aspect-ratio: 1/1; }
+.gallery-grid figure.is-wide { grid-column: 1 / -1; aspect-ratio: 3300/1057; }
 .gallery-grid figure > :not(figcaption) { position: absolute; inset: 0; width: 100%; height: 100%; }
 .gallery-grid figure > img { object-fit: cover; }
 .gallery-grid figure::after {
