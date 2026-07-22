@@ -304,9 +304,16 @@ p { text-wrap: pretty; }
   flex-direction: column;
   padding: var(--sp-5) var(--gutter) var(--sp-7);
   transform: translateY(-100%);
-  transition: transform var(--dur-slow) var(--ease-in-out);
+  visibility: hidden;
+  transition: transform var(--dur-slow) var(--ease-in-out),
+              visibility 0s linear var(--dur-slow);
 }
-.nav-drawer.is-open { transform: translateY(0); }
+.nav-drawer.is-open {
+  transform: translateY(0);
+  visibility: visible;
+  transition: transform var(--dur-slow) var(--ease-in-out),
+              visibility 0s linear 0s;
+}
 .nav-drawer__top { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--sp-7); }
 .nav-drawer ul { display: flex; flex-direction: column; gap: var(--sp-4); }
 .nav-drawer a { font-family: var(--font-display); font-size: var(--fs-xl); color: var(--cream); }
