@@ -1,11 +1,16 @@
 {
-  "name": "Wiley Roots Lemon Cheesecake County Fair",
-  "brewery": "Wiley Roots Brewing Co.",
+  "beerInfo": {
+    "name": "Wiley Roots Lemon Cheesecake County Fair",
+    "brewery": "Wiley Roots Brewing Co.",
+    "style": "Sour & Fruit Beers",
+    "abv": 6.8,
+    "ibu": null,
+    "description": "Mixed-fermentation sour with lemon, cinnamon, graham cracker, and cheesecake.",
+    "catalogBeerId": null
+  },
   "location": "Greeley, CO",
   "category": "Sour & Fruit Beers",
-  "abv": 6.8,
   "nitro": false,
-  "description": "Mixed-fermentation sour with lemon, cinnamon, graham cracker, and cheesecake.",
   "onTap": true,
   "order": 20
 }

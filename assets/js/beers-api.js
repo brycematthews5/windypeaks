@@ -24,17 +24,18 @@ const WPBeers = (function () {
   }
 
   function renderBeerCard(beer) {
+    const info = beer.beerInfo || {};
     const nitroSuffix = beer.nitro
       ? ` <span class="text-dim" style="font-weight:400;">(Nitro)</span>`
       : "";
-    const abv = Number.isFinite(Number(beer.abv)) ? `${Number(beer.abv).toFixed(1)}% ABV` : "";
+    const abv = Number.isFinite(Number(info.abv)) ? `${Number(info.abv).toFixed(1)}% ABV` : "";
     return `
       <article class="card">
         <div class="cluster" style="justify-content:space-between;">
-          <h4 style="font-family:var(--font-display); font-size:var(--fs-md); font-weight:500;">${escapeHtml(beer.name)}${nitroSuffix}</h4>
+          <h4 style="font-family:var(--font-display); font-size:var(--fs-md); font-weight:500;">${escapeHtml(info.name)}${nitroSuffix}</h4>
           <span class="badge badge--copper">${abv}</span>
         </div>
-        <p class="text-dim" style="margin-top:6px;">${escapeHtml(beer.brewery)} &middot; ${escapeHtml(beer.location)}. ${escapeHtml(beer.description)}</p>
+        <p class="text-dim" style="margin-top:6px;">${escapeHtml(info.brewery)} &middot; ${escapeHtml(beer.location)}. ${escapeHtml(info.description)}</p>
       </article>`;
   }
 

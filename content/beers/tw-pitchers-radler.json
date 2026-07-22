@@ -1,11 +1,16 @@
 {
-  "name": "T.W. Pitchers' Radler",
-  "brewery": "T.W. Pitchers'",
+  "beerInfo": {
+    "name": "T.W. Pitchers' Radler",
+    "brewery": "T.W. Pitchers'",
+    "style": "Sour & Fruit Beers",
+    "abv": 5.1,
+    "ibu": null,
+    "description": "Grapefruit and blood orange, crisp and refreshing.",
+    "catalogBeerId": null
+  },
   "location": "San Francisco, CA",
   "category": "Sour & Fruit Beers",
-  "abv": 5.1,
   "nitro": false,
-  "description": "Grapefruit and blood orange, crisp and refreshing.",
   "onTap": true,
   "order": 10
 }

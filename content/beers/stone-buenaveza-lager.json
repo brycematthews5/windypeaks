@@ -1,11 +1,16 @@
 {
-  "name": "Stone Buenaveza Lager",
-  "brewery": "Stone Brewing",
+  "beerInfo": {
+    "name": "Stone Buenaveza Lager",
+    "brewery": "Stone Brewing",
+    "style": "Pilsners & Pale Lagers",
+    "abv": 4.7,
+    "ibu": null,
+    "description": "Baja-inspired Mexican lager brewed with sea salt and lime.",
+    "catalogBeerId": null
+  },
   "location": "Escondido, CA",
   "category": "Pilsners & Pale Lagers",
-  "abv": 4.7,
   "nitro": false,
-  "description": "Baja-inspired Mexican lager brewed with sea salt and lime.",
   "onTap": true,
   "order": 10
 }
