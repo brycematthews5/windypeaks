@@ -18,7 +18,7 @@ collections:
     slug: "{{slug}}"
     format: "json"
     extension: "json"
-    summary: "{{name}} — {{category}}"
+    summary: "{{beerInfo.name}} — {{category}}"
     fields:
       - label: "Beer Info"
         name: "beerInfo"
