@@ -15,7 +15,8 @@ collections:
     folder: "content/beers"
     create: true
     delete: true
-    slug: "{{slug}}"
+    identifier_field: "location"
+    slug: "beer-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}"
     format: "json"
     extension: "json"
     summary: "{{beerInfo.name}} — {{category}}"
