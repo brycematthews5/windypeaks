@@ -10,18 +10,28 @@
    bootstrapping — a plain <script> tag placed right after it does that. */
 
 (function () {
-  var FIELD_KEYS = ["name", "brewery", "style", "abv", "ibu", "description"];
+  // Decap stores saved field values as Immutable.js Maps, not plain JS
+  // objects — plain dot/bracket access silently returns undefined for
+  // those. Duck-type on .get() so this works for both an Immutable Map
+  // (existing, previously-saved entries) and a plain object (values we
+  // just set ourselves via onChange in this same session).
+  function getProp(value, key) {
+    if (value == null) return undefined;
+    if (typeof value.get === "function") return value.get(key);
+    return value[key];
+  }
 
   function toStateFromValue(value) {
-    var v = value || {};
+    var abv = getProp(value, "abv");
+    var ibu = getProp(value, "ibu");
     return {
-      name: v.name || "",
-      brewery: v.brewery || "",
-      style: v.style || "",
-      abv: v.abv != null ? String(v.abv) : "",
-      ibu: v.ibu != null ? String(v.ibu) : "",
-      description: v.description || "",
-      catalogBeerId: v.catalogBeerId || null,
+      name: getProp(value, "name") || "",
+      brewery: getProp(value, "brewery") || "",
+      style: getProp(value, "style") || "",
+      abv: abv != null ? String(abv) : "",
+      ibu: ibu != null ? String(ibu) : "",
+      description: getProp(value, "description") || "",
+      catalogBeerId: getProp(value, "catalogBeerId") || null,
     };
   }
 
@@ -31,6 +41,7 @@
       base.query = "";
       base.results = [];
       base.searching = false;
+      base.searched = false;
       base.error = null;
       return base;
     },
@@ -64,7 +75,7 @@
       var query = this.state.query.trim();
       if (!query) return;
       var self = this;
-      self.setState({ searching: true, error: null, results: [] });
+      self.setState({ searching: true, searched: false, error: null, results: [] });
       fetch("/api/beer-search?q=" + encodeURIComponent(query))
         .then(function (res) {
           if (!res.ok) {
@@ -77,10 +88,10 @@
           return res.json();
         })
         .then(function (data) {
-          self.setState({ searching: false, results: (data && data.data) || [] });
+          self.setState({ searching: false, searched: true, results: (data && data.data) || [] });
         })
         .catch(function (err) {
-          self.setState({ searching: false, error: String((err && err.message) || err) });
+          self.setState({ searching: false, searched: true, error: String((err && err.message) || err) });
         });
     },
 
@@ -190,6 +201,18 @@
               resultItems
             )
           : null,
+        s.searched && !s.searching && !s.error && s.results.length === 0
+          ? h(
+              "p",
+              { style: { fontSize: "13px", fontStyle: "italic", margin: "0 0 12px" } },
+              "No matches on catalog.beer — fill in the fields below by hand."
+            )
+          : null,
+        h(
+          "p",
+          { style: { fontSize: "12px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "0.04em", margin: "14px 0 8px", opacity: 0.7 } },
+          "Beer Details (editable)"
+        ),
         this.renderField("Beer name", "name"),
         this.renderField("Brewery", "brewery"),
         this.renderField("Style", "style"),
@@ -206,14 +229,16 @@
 
   var CatalogBeerSearchPreview = createClass({
     render: function () {
-      var v = this.props.value || {};
-      if (!v.name) return h("p", {}, "(no beer selected yet)");
+      var name = getProp(this.props.value, "name");
+      var brewery = getProp(this.props.value, "brewery");
+      var abv = getProp(this.props.value, "abv");
+      if (!name) return h("p", {}, "(no beer selected yet)");
       return h(
         "div",
         {},
-        h("strong", {}, v.name),
-        v.brewery ? " — " + v.brewery : "",
-        v.abv != null ? " (" + v.abv + "% ABV)" : ""
+        h("strong", {}, name),
+        brewery ? " — " + brewery : "",
+        abv != null ? " (" + abv + "% ABV)" : ""
       );
     },
   });
